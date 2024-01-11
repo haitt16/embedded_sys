@@ -1,0 +1,132 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Hai Tran, HUST, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+C:\codes\embeded_system\Embedded\MDK-ARM\Embedded.uvprojx
+Project File Date:  01/10/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Embedded'
+compiling main.c...
+../Core/Inc/ssd1306.h(238): warning:  #1295-D: Deprecated declaration ssd1306_I2C_Init - give arg types
+  void ssd1306_I2C_Init();
+../Core/Inc/ssd1306.c(152): warning:  #188-D: enumerated type mixed with another type
+              if(byte & 0x80) SSD1306_DrawPixel(x+i, y, color);
+../Core/Inc/ssd1306.c(606): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Fill (0);
+../Core/Src/main.c(110): warning:  #1295-D: Deprecated declaration test_password_ques - give arg types
+  void test_password_ques();
+../Core/Src/main.c(111): warning:  #1295-D: Deprecated declaration question - give arg types
+  void question();
+../Core/Src/main.c(112): warning:  #1295-D: Deprecated declaration luu_cau_hoi - give arg types
+  void luu_cau_hoi();
+../Core/Src/main.c(113): warning:  #1295-D: Deprecated declaration enter_answer - give arg types
+  void enter_answer();
+../Core/Src/main.c(114): warning:  #1295-D: Deprecated declaration answer - give arg types
+  void answer();
+../Core/Src/main.c(115): warning:  #1295-D: Deprecated declaration check_newpassword - give arg types
+  void check_newpassword();
+../Core/Src/main.c(166): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts("Enter your new pass:", &Font_7x10, 1);
+../Core/Src/main.c(183): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts ("Enter password:", &Font_7x10, 1);
+../Core/Src/main.c(199): warning:  #188-D: enumerated type mixed with another type
+  			SSD1306_Puts ("Over 5 times.", &Font_7x10, 1);
+../Core/Src/main.c(202): warning:  #188-D: enumerated type mixed with another type
+  			SSD1306_Puts ("Pls wait 10s.", &Font_7x10, 1);
+../Core/Src/main.c(210): warning:  #188-D: enumerated type mixed with another type
+  			SSD1306_Puts ("Over 10 times.", &Font_7x10, 1);
+../Core/Src/main.c(214): warning:  #188-D: enumerated type mixed with another type
+  			SSD1306_Puts ("Pls wait 20s.", &Font_7x10, 1);
+../Core/Src/main.c(394): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts("What's your birdthday?", &Font_7x10, 1);
+../Core/Src/main.c(405): warning:  #188-D: enumerated type mixed with another type
+  				SSD1306_Putc(character, &Font_7x10, 1);
+../Core/Src/main.c(411): warning:  #188-D: enumerated type mixed with another type
+  				SSD1306_Puts("/", &Font_7x10, 1);
+../Core/Src/main.c(416): warning:  #188-D: enumerated type mixed with another type
+  				SSD1306_Putc(character, &Font_7x10, 1);
+../Core/Src/main.c(428): warning:  #188-D: enumerated type mixed with another type
+  				SSD1306_Puts(" ", &Font_7x10, 1);
+../Core/Src/main.c(432): warning:  #188-D: enumerated type mixed with another type
+  				SSD1306_Puts(" ", &Font_7x10, 1);
+../Core/Src/main.c(439): warning:  #188-D: enumerated type mixed with another type
+  				SSD1306_Puts(" ", &Font_7x10, 1);
+../Core/Src/main.c(452): warning:  #188-D: enumerated type mixed with another type
+  	SSD1306_Puts("Your Birdthday?", &Font_7x10, 1);
+../Core/Src/main.c(466): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts("Enter new pass:", &Font_7x10, 1);
+../Core/Src/main.c(473): warning:  #188-D: enumerated type mixed with another type
+  			SSD1306_Puts("Confirm new pass:", &Font_7x10, 1);
+../Core/Src/main.c(489): warning:  #188-D: enumerated type mixed with another type
+  				SSD1306_Puts("x", &Font_7x10, 1);
+../Core/Src/main.c(499): warning:  #188-D: enumerated type mixed with another type
+  				SSD1306_Puts(" ", &Font_7x10, 1);
+../Core/Src/main.c(519): warning:  #188-D: enumerated type mixed with another type
+  			SSD1306_Puts("_", &Font_7x10, 1);
+../Core/Src/main.c(523): warning:  #188-D: enumerated type mixed with another type
+  			SSD1306_Puts(" ", &Font_7x10, 1);
+../Core/Src/main.c(567): warning:  #188-D: enumerated type mixed with another type
+  			SSD1306_Puts("_", &Font_7x10, 1);
+../Core/Src/main.c(571): warning:  #188-D: enumerated type mixed with another type
+  			SSD1306_Puts(" ", &Font_7x10, 1);
+../Core/Src/main.c(588): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts("Correct", &Font_7x10, 1);
+../Core/Src/main.c(599): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts("Wrong", &Font_7x10, 1);
+../Core/Src/main.c(616): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts("Correct", &Font_7x10, 1);
+../Core/Src/main.c(627): warning:  #188-D: enumerated type mixed with another type
+  		SSD1306_Puts("Wrong", &Font_7x10, 1);
+../Core/Src/main.c: 35 warnings, 0 errors
+linking...
+Program Size: Code=9668 RO-data=2212 RW-data=72 ZI-data=2816  
+FromELF: creating hex file...
+"Embedded\Embedded.axf" - 0 Error(s), 35 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Embedded
+  C:\Users\trant\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\trant\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

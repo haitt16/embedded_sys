@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"embedded\startup_stm32f103xb.o"
+"embedded\main.o"
+"embedded\stm32f1xx_it.o"
+"embedded\stm32f1xx_hal_msp.o"
+"embedded\stm32f1xx_hal_gpio_ex.o"
+"embedded\stm32f1xx_hal_i2c.o"
+"embedded\stm32f1xx_hal.o"
+"embedded\stm32f1xx_hal_rcc.o"
+"embedded\stm32f1xx_hal_rcc_ex.o"
+"embedded\stm32f1xx_hal_gpio.o"
+"embedded\stm32f1xx_hal_dma.o"
+"embedded\stm32f1xx_hal_cortex.o"
+"embedded\stm32f1xx_hal_pwr.o"
+"embedded\stm32f1xx_hal_flash.o"
+"embedded\stm32f1xx_hal_flash_ex.o"
+"embedded\stm32f1xx_hal_exti.o"
+"embedded\stm32f1xx_hal_tim.o"
+"embedded\stm32f1xx_hal_tim_ex.o"
+"embedded\system_stm32f1xx.o"
+--strict --scatter "Embedded\Embedded.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Embedded.map" -o Embedded\Embedded.axf
